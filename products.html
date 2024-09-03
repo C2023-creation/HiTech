@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Products</title>
+</head>
+
+<body class="text-dark fw-medium text-secondary">
+    <header class="d-flex  justify-content-center 
+    align-items-center bg-secondary text-light">
+        <div class="d-flex">
+            <p class="w-25"><img src="../FRONT/images/logo.svg" alt="logo" class="  w-25">
+                HiTech.NET</p>
+            <h1>Gestion des produits</h1>
+        </div>
+
+        <div class="dropdown w-25">
+
+            <button class="btn  dropdown-toggle w-50 " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><img src="BACK/avatar.png" alt="avatar" class="rounded-circle w-50">
+                Bob
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mon Compte</a></li>
+                <li><a class="dropdown-item" href="#">Deconexion</a></li>
+
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="container d-flex   m-auto p-0 ">
+        <div class=" bg-light lh-lg  pt-5  ">
+
+            <section>
+                <h2><i class="bi bi-house-door fs-3"></i>Accueil</h2>
+                <ul class="text-primary p-0 list-unstyled class">
+                    <li>Tableau de bord</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h2>Site web</h2>
+                <ul class="text-primary list-unstyled class">
+                    <li>Gestion des rubriques</li>
+                    <li>Gestion des actualités</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><i class="bi bi-basket fs-3 "></i>Boutique</h2>
+                <ul class="text-primary list-unstyled class">
+                    <li>Gestion des rayons</li>
+                    <li class="bg-primary text-light">Gestion des produits</li>
+                    <li>Gestion des commandes</li>
+                </ul>
+            </section>
+
+            <section class="m-2 text-decoration-none p-0">
+                <h2><i class="bi bi-gear  fs-3 "></i>Paramètres</h2>
+                <ul class="text-primary list-unstyled class">
+                    <li>Gestion des utilisateurs</li>
+                    <li>Gestion des rôles</li>
+                    <li>Préférences</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <section class="table ms-5">
+
+            <form action="
+            " method="post" class="mt-5">
+                <input type="text" class=" p-2 rounded-1">
+                <button type="search" class="  p-2 rounded-1">Rechercher</button>
+                <button type="button" class="float-end bg-primary text-light border-0 p-2 rounded-1"><i
+                        class="bi bi-plus-lg bg-primary text-light"></i>Ajouter un
+                    produit</button>
+            </form>
+
+
+            <table class="table-bordered  mt-3 mb-2  ">
+                <thead class="bg-dark text-light">
+                    <tr class="table-dark  ">
+                        <th scope="col" class=" ">Statut</th>
+                        <th scope="col" class="p-3">Boutique</th>
+                        <th scope="col">Rayon</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col" class="">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light ">
+                        <th scope="row " class="text-success fw-medium p-3">En boutique</th>
+                        <td class="px-5">Périfériques &composantes</td>
+                        <td class="px-4 ">Ecrans d'ordinateurs</td>
+                        <td class="p-3 ">AOC 24B1XHS</td>
+                        <td>
+
+                            <button type="button" class="btn border-danger text-danger p-0" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retirer
+                            </button>
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Retrait d'un
+                                                produit</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Attention, le produit ne sera plus visible sur le site.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Annuler</button>
+                                            <button type="button" class="btn btn-danger text-light">Retirer le produit
+                                                de la boutique</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-secondary p-0">Modifier</button>
+                            <button class="btn btn-outline-secondary p-0">Caractéristiques</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-success fw-medium">En boutique</th>
+                        <td>Périfériques & composantes</td>
+                        <td>Ecrans d'ordinateurs</td>
+                        <td>AOC 24B1XHS</td>
+                        <td class="">
+                            <button type="button" class="btn border-danger text-danger p-0" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Retirer
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">Retrait d'un
+                                                produit</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Attention, le produit ne sera plus visible sur le site.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Annuler</button>
+                                            <button type="button" class="btn btn-danger text-light">Retirer le produit
+                                                de la boutique</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-outline-secondary p-0">Modifier</button>
+                            <button class="btn btn-outline-secondary p-0">Caractéristiques</button>
+                        </td>
+                    </tr>
+                    <tr class=" table-light">
+                        <th scope="row" class="text-danger fw-medium">Retiré</th>
+                        <td>Périfériques & composantes</td>
+                        <td>Ecrans d'ordinateurs</td>
+                        <td>AOC 24B1XHS</td>
+                        <td class="pe-5">
+                            <button class="btn btn-outline-success p-0">Remmetre</button>
+                            <button class="btn btn-outline-secondary p-0">Modifier</button>
+                            <button class="btn btn-outline-secondary p-0">Caractéristiques</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="fw-medium">En attente</th>
+                        <td>Périfériques & composantes</td>
+                        <td>Ecrans d'ordinateurs</td>
+                        <td>AOC 24B1XHS</td>
+                        <td>
+                            <button class="btn btn-outline-success p-0">Mettre en boutique</button>
+                            <button class="btn btn-outline-secondary p-0">Modifier</button>
+                            <button class="btn btn-outline-secondary p-0">Caractéristiques</button>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+
+            <div class="btn-group me-2 position-relative start-50 " role="group" aria-label="First group">
+
+                <button type="button" class=" bi bi-chevron-left text-primary border-light"></button>
+                <button type="button" class=" btn-primary text-primary border-light">1</button>
+                <button type="button" class=" btn-primary text-primary border-light">2</button>
+                <button type="button" class="btn-primary text-primary border-light">3</button>
+                <button type="button" class="btn-primary text-primary border-light">4</button>
+                <button type="button" class=" text-primary border-light">5</button>
+                <button type="button" class=" btn-primary bi bi-chevron-right text-primary border-light"></button>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
